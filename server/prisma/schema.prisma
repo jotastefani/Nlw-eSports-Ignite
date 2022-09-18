@@ -30,5 +30,5 @@ model Ad {
   useVoiceChannel Boolean
   createdAt       DateTime @default(now())
 
-  Game Game @relation(fields: [gameId], references: [id])
+  game Game @relation(fields: [gameId], references: [id])
 }
